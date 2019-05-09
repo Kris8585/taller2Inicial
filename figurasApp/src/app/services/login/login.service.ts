@@ -17,7 +17,7 @@ export class LoginService {
   constructor(
     // private angularFireAuth: AngularFireAuth, private router: Router,
     // private dataService: DataService, private snotifyService: SnotifyService
-    ) {
+ ) {
     this.titulo$ = new Subject<string>();
 
   }
@@ -56,13 +56,13 @@ export class LoginService {
   //   });
   // }
 
-  // getTitulo(): Observable<string> {
-  //   return this.titulo$;
-  // }
+  getTitulo(): Observable<string> {
+    return this.titulo$;
+  }
 
-  // setTitulo(titulo: string) {
-  //   this.titulo$.next(titulo);
-  // }
+  setTitulo(titulo: string) {
+    this.titulo$.next(titulo);
+  }
 
   // getUsuario(): Usuario {
   //   return this.currentUser;

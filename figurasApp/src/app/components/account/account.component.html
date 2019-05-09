@@ -1,2 +1,12 @@
-account
-<router-outlet></router-outlet>
+<div class="container-fluid d-flex h-100 flex-column">
+    <div class="row h-100">
+        <div class="col-4 _bg-account order-last text-white ">
+            <h4>Welcome to Application</h4>
+            <h2 class="_titulo_st">{{titulo}}</h2>
+            <h5 class="_p_st">About us</h5>
+        </div>
+        <div class="col-8 _center_st _cont_st">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

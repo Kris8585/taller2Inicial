@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
   selector: 'app-recovery',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecoveryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _loginService:LoginService) {
+
+    this._loginService.setTitulo("Recovery");
+   }
 
   ngOnInit() {
   }

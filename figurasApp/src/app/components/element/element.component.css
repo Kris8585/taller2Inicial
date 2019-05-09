@@ -1,0 +1,39 @@
+._cont_st {
+    outline: 4px dashed #D5DBDB;
+    outline-offset: -10px;
+    height: 100vh;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 25px 25px 25px 25px;
+}
+
+._p_st {
+    margin-top: 10%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+._p_formula_st {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+._btn_st {
+    color: black;
+    border-color: darkblue;
+    background: transparent;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+._div_formulas_st {
+    margin-top: 10%;
+}
+
+._img_st {
+    width: 200px;
+}

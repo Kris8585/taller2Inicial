@@ -1,0 +1,17 @@
+/* ._label_st {
+    position: absolute;
+    left: 0px;
+}
+
+._card_st {
+    position: relative;
+}
+
+._container_st {
+    margin-top: 20%;
+} */
+
+._container_st {
+    height: 50vh;
+    width: 50wh;
+}

@@ -24,6 +24,7 @@ const routes: Routes = [
     ]
   },
   { path: '**', pathMatch: 'full', redirectTo: 'secure/principal' }
+  
 ];
 
 @NgModule({

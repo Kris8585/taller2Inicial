@@ -1,0 +1,12 @@
+._cont_st {
+    border-style: dashed;
+    border-color: #D5DBDB;
+    height: 100vh;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+p {
+    color: #D5DBDB;
+    margin-bottom: 50%;
+}

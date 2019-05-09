@@ -1,0 +1,28 @@
+._bg-account {
+    background-color: indigo;
+    text-align: center;
+    position: relative;
+}
+
+._cont_st {
+    outline: 4px dashed #D5DBDB;
+    outline-offset: -10px;
+    height: 100vh;
+    position: relative;
+}
+
+._center_st {
+    text-align: center;
+}
+
+._p_st {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+}
+
+._titulo_st {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}

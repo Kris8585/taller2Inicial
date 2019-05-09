@@ -1,7 +1,44 @@
-<div class="row h-100">
-    <div class="col">
-        element
-        <button class="btn btn-outline-dark" (click)="goTo('/secure/principal')">Principal</button>
+<div class="container-fluid">
+
+
+    <div class="row h-100" *ngFor="let item of (shapeData$| async)">
+
+
+        <div class="{{colSize}} _cont_st">
+            <h1>{{item.nombre}}</h1>
+            <p class="_p_st">{{item.descripcion}}</p>
+
+            <button class="btn _btn_st" (click)="changePage('1')">Fórmulas</button>
+            <button class="btn _btn_st" (click)="changePage('2')">Imágenes</button>
+        </div>
+
+
+        <div class="col-md-6 _cont_st" *ngIf="flagFormula">
+            <h1>Fórmulas</h1>
+
+            <div class="_div_formulas_st" *ngFor="let formula of item.formulas">
+                <h2>{{formula.titulo}}</h2>
+                <p class="_p_formula_st">{{formula.formula}}</p>
+            </div>
+
+            <button class="btn _btn_st" (click)="changePage('3')">Ocultar</button>
+        </div>
+
+
+        <div class="col-md-6 _cont_st" *ngIf="flagImg">
+            <h1>Imágenes</h1>
+            <div *ngFor="let imagen of item.imagenes">
+                <img class="_img_st" src="{{imagen}}">
+            </div>
+
+            <button class="btn _btn_st" (click)="changePage('3')">Ocultar</button>
+        </div>
+
+
     </div>
+
+
+
+
 
 </div>

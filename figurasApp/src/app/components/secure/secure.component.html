@@ -1,13 +1,19 @@
 <div class="container-fluid d-flex h-100 flex-column">
     <div class="row h-100">
-        <div class="col-4 bg-primary">
-            secure
+        <div class="col-4 bg-primary text-white">
+            <p>Welcome to Application</p>
+            <h3>Kristel Salazar </h3>
 
-            <button class="btn btn-outline-dark" (click)="goTo('/secure/element/triangle')">Triangle</button>
-            <button class="btn btn-outline-dark" (click)="goTo('/secure/element/square')">Square</button>
-            <button class="btn btn-outline-dark" (click)="goTo('/about-us')">About Us</button>
+
+            <a class="nav-link text-white" [routerLink]="['/secure','element',item.nombre]" routerLinkActive="text-bold" *ngFor="let item of (elementos$| async)">{{item.nombre}}</a>
+
+            <div class="row _position_col">
+                <div class="col-12 _margin"> <button class="btn _btn_st" (click)="goTo('/about-us')">About Us</button></div>
+                <div class="col-12 _margin"> <button class="btn _btn_st" (click)="goTo('/about-us')">Log Out</button></div>
+            </div>
+
         </div>
-        <div class="col-8  bg-secondary">
+        <div class="col-8 _center_st">
             <router-outlet></router-outlet>
         </div>
     </div>
